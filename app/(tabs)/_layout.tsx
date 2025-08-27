@@ -51,6 +51,19 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="sobre"
+        options={{
+          title: 'Sobre',
+          tabBarIcon: ({ color, focused }) => (
+            <IconSymbol 
+              size={focused ? 32 : 28} 
+              name={focused ? "plus.circle.fill" : "plus.circle"} 
+              color={color} 
+            />
+          ),
+        }}
+      />
     </Tabs>
   );
 }
