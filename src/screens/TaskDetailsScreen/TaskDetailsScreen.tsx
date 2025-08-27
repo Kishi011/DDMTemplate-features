@@ -71,7 +71,7 @@ export const TaskDetailsScreen: React.FC = () => {
 
     try {
       await toggleTaskCompletion(task.id);
-      setTask({ ...task, completed: !task.completed });
+      setTask({ ...task, completed: !task.completed, completedAt: new Date().toISOString() })
     } catch (error) {
       console.error('Erro ao atualizar status:', error);
     }
@@ -254,6 +254,14 @@ export const TaskDetailsScreen: React.FC = () => {
                 <ThemedText style={styles.dateText}>
                   {formatDate(task.createdAt)}
                 </ThemedText>
+                <ThemedText style={styles.sectionLabel}>Finalizada em</ThemedText>
+                {
+                  task?.completed ?
+                  <ThemedText style={styles.dateText}>
+                    {formatDate(task.completedAt)}
+                  </ThemedText>
+                  : ''
+                }
               </ThemedView>
             </>
           )}
