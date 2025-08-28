@@ -41,9 +41,7 @@ export const AddTaskScreen: React.FC = () => {
       <ThemedView style={styles.header}>
         
         <ThemedText type="title">Nova Tarefa</ThemedText>
-        <ThemedText style={styles.subtitle}>
-          Preencha os detalhes da sua nova tarefa
-        </ThemedText>
+        <ThemedText style={styles.subtitle}>Preencha os detalhes da sua nova tarefa</ThemedText>
       </ThemedView>
 
       <TaskForm
@@ -57,12 +55,9 @@ export const AddTaskScreen: React.FC = () => {
 const styles = StyleSheet.create({
   header: {
     alignItems: 'center',
-    paddingHorizontal: 20,
-    paddingBottom: 32,
   },
   subtitle: {
     fontSize: 16,
-    color: '#666',
     textAlign: 'center',
     marginTop: 8,
   },

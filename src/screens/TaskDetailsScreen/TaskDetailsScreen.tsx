@@ -307,7 +307,6 @@ export const TaskDetailsScreen: React.FC = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#ffffff',
   },
   loadingContainer: {
     flex: 1,
@@ -335,8 +334,6 @@ const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
-    paddingHorizontal: 20,
-    paddingBottom: 120, // Espaço para os botões
   },
   statusContainer: {
     paddingVertical: 20,
@@ -354,16 +351,16 @@ const styles = StyleSheet.create({
     backgroundColor: '#e8f5e8',
   },
   statusText: {
-    marginLeft: 8,
     fontSize: 16,
+    color: '#999',
     fontWeight: '600',
-    color: '#666',
   },
   completedStatusText: {
     color: '#4CAF50',
   },
   taskContent: {
-    paddingBottom: 20,
+    paddingVertical: 10,
+    paddingHorizontal: 20,
   },
   section: {
     marginBottom: 24,
@@ -371,20 +368,16 @@ const styles = StyleSheet.create({
   sectionLabel: {
     fontSize: 14,
     fontWeight: '600',
-    color: '#666',
-    marginBottom: 8,
     textTransform: 'uppercase',
     letterSpacing: 0.5,
   },
   taskTitle: {
     fontSize: 24,
     fontWeight: '700',
-    color: '#333',
     lineHeight: 32,
   },
   taskDescription: {
     fontSize: 16,
-    color: '#666',
     lineHeight: 24,
   },
   completedText: {
@@ -398,18 +391,15 @@ const styles = StyleSheet.create({
   priorityText: {
     fontSize: 16,
     fontWeight: '500',
-    color: '#333',
     marginLeft: 8,
   },
   dateText: {
     fontSize: 16,
-    color: '#666',
   },
   actionButtons: {
     flexDirection: 'row',
     padding: 20,
-    paddingBottom: 40,
-    backgroundColor: '#ffffff',
+    paddingBottom: 50,
     borderTopWidth: 1,
     borderTopColor: '#e0e0e0',
     position: 'absolute',
