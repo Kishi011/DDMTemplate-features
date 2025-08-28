@@ -7,7 +7,7 @@ import { StyleSheet, Pressable, Linking } from 'react-native';
 export const SobreScreen: React.FC = () => {
 
   const handleOpenLink = () => {
-    Linking.openURL('https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1'); // substitua pelo link desejado
+    Linking.openURL('https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1'); 
   };
 
   return (
