@@ -90,6 +90,11 @@ export const TaskForm: React.FC<TaskFormProps> = ({
         onPriorityChange={setPriority}
       />
 
+      <PrioritySelector
+        selectedPriority={group}
+        onPriorityChange={setGroup}
+      />
+
       <ThemedView style={styles.actions}>
         <Button
           title="Limpar"

@@ -62,6 +62,7 @@ export const useTasks = () => {
       createdAt: new Date().toISOString(),
       completedAt: '',
       priority: taskData.priority,
+      group: taskData.group,
     };
 
     setTasks(prevTasks => {

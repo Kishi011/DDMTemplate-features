@@ -20,6 +20,7 @@ export const TaskDetailsScreen: React.FC = () => {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [priority, setPriority] = useState<TaskPriority>('média');
+  const [group, setGroup] = useState<TaskPriority>('trabalho');
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
@@ -30,6 +31,7 @@ export const TaskDetailsScreen: React.FC = () => {
         setTitle(foundTask.title);
         setDescription(foundTask.description);
         setPriority(foundTask.priority);
+        setGroup(foundTask.group);
       } else {
         Alert.alert('Erro', 'Tarefa não encontrada!');
         router.back();
