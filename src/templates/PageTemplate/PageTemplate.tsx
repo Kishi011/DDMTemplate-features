@@ -70,15 +70,12 @@ export const PageTemplate: React.FC<PageTemplateProps> = ({
 const styles = StyleSheet.create({
   keyboardContainer: {
     flex: 1,
-    backgroundColor: '#ffffff',
   },
   scrollView: {
-    flex: 1,
-    backgroundColor: '#ffffff',
+    flex: 1
   },
   container: {
     flex: 1,
-    backgroundColor: '#ffffff',
     paddingTop: 60,
   },
   header: {
@@ -87,7 +84,6 @@ const styles = StyleSheet.create({
   },
   subtitle: {
     fontSize: 16,
-    color: '#666',
     marginTop: 4,
   },
   content: {
@@ -95,6 +91,5 @@ const styles = StyleSheet.create({
   },
   scrollContent: {
     flexGrow: 1,
-    paddingBottom: 100, // Espaço extra para evitar sobreposição com tabs
   },
 });

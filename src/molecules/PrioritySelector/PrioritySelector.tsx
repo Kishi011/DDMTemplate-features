@@ -1,9 +1,9 @@
-import React from 'react';
-import { StyleSheet, TouchableOpacity } from 'react-native';
-import { ThemedView } from '@/components/ThemedView';
 import { ThemedText } from '@/components/ThemedText';
+import { ThemedView } from '@/components/ThemedView';
 import { PriorityIndicator } from '@/src/atoms';
 import { TaskPriority } from '@/src/types';
+import React from 'react';
+import { StyleSheet, TouchableOpacity } from 'react-native';
 
 export interface PrioritySelectorProps {
   selectedPriority: TaskPriority;
@@ -59,7 +59,6 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '600',
     marginBottom: 8,
-    color: '#333',
   },
   optionsContainer: {
     flexDirection: 'row',

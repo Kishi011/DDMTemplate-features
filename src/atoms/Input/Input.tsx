@@ -1,7 +1,7 @@
+import { ThemedText } from '@/components/ThemedText';
+import { ThemedView } from '@/components/ThemedView';
 import React from 'react';
 import { StyleSheet, TextInput, TextInputProps } from 'react-native';
-import { ThemedView } from '@/components/ThemedView';
-import { ThemedText } from '@/components/ThemedText';
 
 export interface InputProps extends TextInputProps {
   label?: string;
@@ -64,7 +64,6 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '600',
     marginBottom: 8,
-    color: '#333',
   },
   input: {
     borderWidth: 1,

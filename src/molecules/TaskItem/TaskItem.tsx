@@ -1,9 +1,9 @@
-import React from 'react';
-import { StyleSheet, TouchableOpacity } from 'react-native';
-import { ThemedView } from '@/components/ThemedView';
 import { ThemedText } from '@/components/ThemedText';
+import { ThemedView } from '@/components/ThemedView';
 import { Icon, PriorityIndicator } from '@/src/atoms';
 import { Task } from '@/src/types';
+import React from 'react';
+import { StyleSheet, TouchableOpacity } from 'react-native';
 
 export interface TaskItemProps {
   task: Task;
@@ -37,7 +37,7 @@ export const TaskItem: React.FC<TaskItemProps> = ({
             </ThemedText>
             <PriorityIndicator priority={task.priority} />
           </ThemedView>
-          
+
           {task.description && (
             <ThemedText
               style={[
@@ -91,7 +91,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'flex-start',
-    padding: 16,
+    padding: 10,
+    borderRadius: 12,
   },
   mainContent: {
     flex: 1,
@@ -110,7 +111,6 @@ const styles = StyleSheet.create({
   },
   description: {
     fontSize: 14,
-    color: '#666',
     lineHeight: 20,
   },
   completedText: {
